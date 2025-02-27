@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sungabha Public School</title>
+  <link rel="stylesheet" href="woo.css">
+
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+    header, footer {
+      background-color: #003366;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    /* ISO Logo position */
+    .iso-logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 50px; /* Adjust the size as needed */
+      height: auto;
+    }
+
+    /* Navigation Styles */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+    }
+    nav ul li {
+      padding: 14px 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    nav ul li a:hover {
+      background-color: #555;
+      border-radius: 5px;
+    }
+
+    /* Header and Title */
+    h1 {
+      background-color: #003366;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin: 0;
+      animation: blinkColors 1.5s infinite alternate;
+    }
+
+    /* Blinking effect for heading */
+    @keyframes blinkColors {
+      0100% {
+        color: #ff0000;
+      }
+      25% {
+        color: #00ff00;
+      }
+      50% {
+        color: #0000ff;
+      }
+      75% {
+        color: #ff00ff;
+      }
+      100% {
+        color: #ff6600;
+      }
+    }
+
+    h5 {
+      text-align: center;
+      padding: 10px;
+      font-style: italic;
+      background-color: #f9f9f9;
+      color: #003366;
+    }
+
+    /* Content Styles */
+    .content {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: white;
+    }
+    h2 {
+      color: #003366;
+      font-size: 30px;
+      margin-top: 20px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    /* Center the images and set their size */
+    .center-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 500px; /* Set width */
+      height: 300px; /* Set height */
+      object-fit: cover; /* Ensures image aspect ratio is preserved */
+    }
+
+    /* Footer Styles */
+    footer {
+      font-size: 16px;
+    }
+    footer a {
+      color: #f9f9f9;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav ul li {
+        padding: 10px 0;
+      }
+      .content {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- Pop-Up Overlay -->
+<div class="popup-overlay" id="popupOverlay"></div>
+
+<!-- Pop-Up Box -->
+<div class="popup" id="popupBox">
+  <img src="sungabha1.jpg" alt="Admissions Open" style="width: 102%; border-radius: 25px;">
+  <b> <p>Admissions for the new academic year are now open. Apply today!</p> <b>
+  <button class="close-btn" onclick="closePopup()">Close</button>
+</div>
+
+
+<script>
+  // Show the pop-up when the page loads
+  window.onload = function() {
+    document.getElementById("popupOverlay").style.display = "block";
+    document.getElementById("popupBox").style.display = "block";
+  };
+
+  // Function to close the pop-up
+  function closePopup() {
+    document.getElementById("popupOverlay").style.display = "none";
+    document.getElementById("popupBox").style.display = "none";
+  }
+</script>
+
+
+
+
+  <header>
+    <h5>"SUNGABHA THE LAND OF OPPORTUNITY"</h5>
+    <h1>SUNGABHA PUBLIC SCHOOL</h1>
+	
+	<!-- ISO Logo -->
+    <img src="iso.jfif" alt="ISO 9001:2015 Certified" class="iso-logo">
+
+  </header>
+  <h5>"An ISO 9001:2015 Certified School"</h5>
+
+  <nav>
+    <ul>
+      <li><a href="Overview.html">About</a></li>
+      <li><a href="Salient Features.html">Features</a></li>
+      <li><a href="Courses Offered.html">Courses</a></li>
+      <li><a href="Location.html">Location</a></li>
+      <li><a href="Contact us.html">Contact</a></li>
+      <li><a href="photos.html">Photos</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <!-- Add new image above the current one -->
+    <img src="img/clz.jpg" alt="Sungabha Public School" class="center-image">
+
+    <h2>About Sungabha Public School</h2>
+    <p><b>SUNGABHA PUBLIC SECONDARY SCHOOL, RUPANDEHI</b> was established in 1996 AD (2053 BS) as a community-based educational institution, located in Sainamaina-3, Murgiya, Rupandehi. It is affiliated with the National Examination Board (NEB) and approved by the Ministry of Education. The school offers educational programs from ECD to grade 10 and Plus Two (Class 11 and 12) in Management, Humanities, and Education streams. Sungabha provides quality education with moderate fee structures and offers a scholarship scheme for deserving students. The school is dedicated to promoting holistic development in its students, offering them opportunities for academic and personal growth.</p>
+
+    <h2>Salient Features</h2>
+    <p>The school provides excellent facilities including:</p>
+    <ul>
+      <li>A well-equipped library with a wide range of educational and reference books.</li>
+      <li>Sports facilities, including basketball, football, and volleyball courts.</li>
+      <li>Science and computer labs for practical learning and experiments.</li>
+      <li>Multimedia resources to enhance teaching and learning experiences.</li>
+      <li>Qualified and experienced teaching staff who are dedicated to students’ success.</li>
+      <li>Counseling services to support students’ mental health and career planning.</li>
+      <li>Scholarships and financial aid for deserving students.</li>
+      <li>Spacious classrooms that are well-ventilated and conducive to learning.</li>
+      <li>A modern conference hall for school events and meetings.</li>
+      <li>Music and dance classes to foster creativity and talent.</li>
+      <li>Educational tours and extracurricular activities to support well-rounded development.</li>
+    </ul>
+
+    <h2>Courses Offered</h2>
+    <p>The following programs are available:</p>
+    <ul>
+      <li>Ten Plus Two (+2) Management</li>
+      <li>Ten Plus Two (+2) Humanities</li>
+      <li>Ten Plus Two (+2) Education</li>
+      <li>Secondary Education (Grades 1 to 10) for various subjects including Mathematics, Science, and Social Studies</li>
+    </ul>
+    <p>These programs are designed to equip students with the skills and knowledge necessary for further studies or entering the workforce.</p>
+
+    <h2>Location</h2>
+    <p>The school is located in Sainamaina-3, Murgiya, Rupandehi, Nepal. It is easily accessible by both private and public transportation. The surrounding area is peaceful, providing an ideal learning environment away from the noise of the city. The school’s proximity to major roads ensures convenient access for students and parents.</p>
+    <p>Address: Sungabha Public School, Sainamaina-3, Murgiya, Rupandehi, Nepal.</p>
+  </div>
+
+  <footer>
+    <h2>Contact Us</h2>
+    <p>Telephone: +977-71-440284</p>
+    <p>Email: <a href="mailto:info@sungabhapublic.edu.np">info@sungabhapublic.edu.np</a></p>
+    <p>Website: <a href="http://www.sungabhapublic.edu.np" target="_blank">www.sungabhapublic.edu.np</a></p>
+  </footer>
+
+</body>
+</html>
